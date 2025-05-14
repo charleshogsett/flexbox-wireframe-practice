@@ -61,3 +61,38 @@ main {
     border-radius: 10px;
     margin-bottom: 10px;  
   }
+  
+  @media (min-width: 768px){
+    .col{
+      width: 100%;
+  max-width: 1200px;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 20px;
+    
+    }
+    header,
+footer {
+  width: 100%;
+  max-width: 1200px; /* Optional: prevent growing too wide */
+  font-size: 25px;
+}
+    aside,
+    main{
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+    }
+aside{
+   font-size: 25px;
+}
+
+article{
+    width: 90%;
+
+}
+    
+    
+  }
